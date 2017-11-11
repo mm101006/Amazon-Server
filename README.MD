@@ -119,20 +119,20 @@ enter in passphrase
 2. in terminal type in `createdb grader`
 3. connect to database by typing in `sudo -u grader psql`
 
-##Other
+## Other
 
-###Steps to drop Database
+### Steps to drop Database
 1. sign in as postgres by typing in `sudo -i -u postgres`
 2. type in `dropdb grader`
 
-###Deleting database Reset up
+### Deleting database Reset up
 1. in terminal type in sudo nano `/etc/apache2/sites-enabled/myLibrary.conf` and type in the new ip address
 2. then type in `sudo service apache2 restart`
 3. Update the client_secrets.json file with new ip address
 4. update the ip address in google console and facebook developer websites
 
-###Running uploader for books to populate database
+### Running uploader for books to populate database
 1. just run books.py 
 
-###Checking for errors on Server
+### Checking for errors on Server
 1. in terminal type in `cat /var/log/apache2/error.log`
