@@ -99,7 +99,7 @@ sudo ufw status, sudo ufw deny 80./tcp, sudo ufw delete deny 80/tcp
 3. then `sudo visudo`
 4. below: %sudo All=(All:All) All add % grader All=(All:All) All
 
-###Creating SSH Key Pair
+### Creating SSH Key Pair
 1. generate a key-pair on local machine
 2. open terminal fro root of your computer and type in `ssh-keygen /home/home/.ssh/Amazon-Server
 enter in passphrase
@@ -110,11 +110,11 @@ enter in passphrase
 7. in terminal type `chmod 700 .ssh`
 8. then type `chmod 644 .ssh/authorized_keys`
 
-###Installing PostgreSQL
+### Installing PostgreSQL
 1. in terminal type in `sudo apt-get install postgresql postgresql-contrib
 2. switch over to postgres account by typing in `sudo -i -u postgres`
 
-###Creating a new user and Database in PostgreSQL
+### Creating a new user and Database in PostgreSQL
 1. in terminal type in `createuser --interactive`
 2. in terminal type in `createdb grader`
 3. connect to database by typing in `sudo -u grader psql`
