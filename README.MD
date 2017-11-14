@@ -1,4 +1,6 @@
 # Project: Linux Server
+I set up a Linux Server using Amazon Lightsail, allowing me to deploy 'The Library' project to a live I.P. address. The server is connected to a PostgreSQL database. I also used the google books API to populate the database with books. To secure the server I configured connections to work only on port 2200, 80, and 123, and SSH-key authentication is enforced -- the user cannot log into the server by typing in a password they must have a private key in order to login. I also created a new user and granted that user admin/sudo access. Server is live and running at : 18.216.67.242
+
 
 ## IP Address
 
@@ -49,6 +51,7 @@
 1. in terminal log in as user
 2. type in `sudo nano /etc/ssh/sshd.config`
 3. Change Row below What Ports, IPs and protocols we listen for
+4. Change PasswordAuthentication to No
 
 ### Configuration of User account Passwords
 1. in terminal sign into admin account
