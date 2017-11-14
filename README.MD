@@ -57,7 +57,7 @@ I set up a Linux Server using Amazon Lightsail, allowing me to deploy 'The Libra
 1. in terminal sign into admin account
 2. type in `cd /etc/ssh`
 3. then `sudo nano sshd_config`
-4. scroll down to Password Authentication no change no to yes
+4. scroll down to Password Authentication change no to yes
 5. type in `sudo/etc/init.d/ssh restart`
 
 ### Enabling Site
