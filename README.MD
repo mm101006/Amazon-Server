@@ -1,5 +1,22 @@
-# Project: Linux Server
-I set up a Linux Server using Amazon Lightsail, allowing me to deploy 'The Library' project to a live I.P. address. The server is connected to a PostgreSQL database. I also used the google books API to populate the database with books. To secure the server I configured connections to work only on port 2200, 80, and 123, and SSH-key authentication is enforced -- the user cannot log into the server by typing in a password they must have a private key in order to login. I also created a new user and granted that user admin/sudo access. Server is live and running at : 18.216.67.242
+# Project: Linux Server && Book Catalog
+
+I set up a Linux Server using Amazon Lightsail, allowing me to deploy 'The Library' project to a live I.P. address. The server is connected to a PostgreSQL database. I also used the google books API to populate the database with books. To secure the server I configured connections to work only on port 2200, 80, and 123, and SSH-key authentication is enforced -- the user cannot log into the server by typing in a password and they must have a private key in order to login. I also created a new user and granted that user admin/sudo access. Server is live and running at : 18.216.67.242
+
+This project is a RESTful web application using the Python framework Flask that features a third-party OAuth authentication login system. The application provides a list of authors as categories. Each category or author contains a book or a series of books written by that author. CRUD operations allow the user to create, read, update, and delete books and authors.
+
+![Pic](LiveWebsite.png)
+
+## Site Navigation
+
+1. http://localhost:5000/login -- user is able to login in from here
+2. http://localhost:5000/index -- user can view all authors within database
+3. http://localhost:5000/index/<int:author_id>/books/ -- user can view all books by that author
+4. http://localhost:5000/index/books -- user can view all books within database
+5. http://localhost:5000/index/<int:author_id>/books/<int:book_id>/ -- user can view a particular book
+6. http://localhost:5000/index/<int:author_id>/books/edit/<int:book_id>/ -- user can edit that book
+7. http://localhost:5000/index/user/books -- user can view all of their books
+8. http://localhost:5000/index/user/authors -- user can view all of their authors
+9. http://localhost:5000/index -- if user is not logged in, user can still view all authors and books within database 
 
 
 ## IP Address
