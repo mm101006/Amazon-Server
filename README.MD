@@ -8,19 +8,6 @@ To view underlying code check it out here: https://github.com/mm101006/BookLibra
 
 ![Pic](LiveWebsite.png)
 
-## Site Navigation
-
-1. http://localhost:5000/login -- user is able to login in from here
-2. http://localhost:5000/index -- user can view all authors within database
-3. http://localhost:5000/index/<int:author_id>/books/ -- user can view all books by that author
-4. http://localhost:5000/index/books -- user can view all books within database
-5. http://localhost:5000/index/<int:author_id>/books/<int:book_id>/ -- user can view a particular book
-6. http://localhost:5000/index/<int:author_id>/books/edit/<int:book_id>/ -- user can edit that book
-7. http://localhost:5000/index/user/books -- user can view all of their books
-8. http://localhost:5000/index/user/authors -- user can view all of their authors
-9. http://localhost:5000/index -- if user is not logged in, user can still view all authors and books within database 
-
-
 ## IP Address
 
 18.216.67.242
