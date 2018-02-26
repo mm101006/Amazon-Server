@@ -4,6 +4,8 @@ I set up a Linux Server using Amazon Lightsail, allowing me to deploy 'The Libra
 
 This project is a RESTful web application using the Python framework Flask that features a third-party OAuth authentication login system. The application provides a list of authors as categories. Each category or author contains a book or a series of books written by that author. CRUD operations allow the user to create, read, update, and delete books and authors.
 
+To view underlying code check it out here: https://github.com/mm101006/BookLibrary
+
 ![Pic](LiveWebsite.png)
 
 ## Site Navigation
